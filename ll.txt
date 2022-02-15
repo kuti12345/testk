@@ -1,1 +1,132 @@
-kuti super
+
+User@WIN-2VU0982IJMD MINGW32 ~/Desktop/kuti
+$ git init
+Initialized empty Git repository in C:/Users/User/Desktop/kuti/.git/
+
+User@WIN-2VU0982IJMD MINGW32 ~/Desktop/kuti (main)
+$ git add .
+
+User@WIN-2VU0982IJMD MINGW32 ~/Desktop/kuti (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   ll.txt
+
+
+User@WIN-2VU0982IJMD MINGW32 ~/Desktop/kuti (main)
+$ git commit
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'User@WIN-2VU0982IJMD.(none)')
+
+User@WIN-2VU0982IJMD MINGW32 ~/Desktop/kuti (main)
+$ git commit -m "kuti"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'User@WIN-2VU0982IJMD.(none)')
+
+User@WIN-2VU0982IJMD MINGW32 ~/Desktop/kuti (main)
+$ ^C
+
+User@WIN-2VU0982IJMD MINGW32 ~/Desktop/kuti (main)
+$ ^[[200~ git config --global user.email "kuti@example.com"
+bash: $'\E[200~': command not found
+
+User@WIN-2VU0982IJMD MINGW32 ~/Desktop/kuti (main)
+$ git config --global user.email "kuti@example.com"
+
+User@WIN-2VU0982IJMD MINGW32 ~/Desktop/kuti (main)
+$ git config --global user.name "kuti"
+
+User@WIN-2VU0982IJMD MINGW32 ~/Desktop/kuti (main)
+$  git config --global user.email
+kuti@example.com
+
+User@WIN-2VU0982IJMD MINGW32 ~/Desktop/kuti (main)
+$ git commit
+hint: Waiting for your editor to close the file... unix2dos: converting file C:/Users/User/Desktop/kuti/.git/COMMIT_EDITMSG to DOS format...
+dos2unix: converting file C:/Users/User/Desktop/kuti/.git/COMMIT_EDITMSG to Unix format...
+[main (root-commit) cb32927] kuti killer
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 ll.txt
+
+User@WIN-2VU0982IJMD MINGW32 ~/Desktop/kuti (main)
+$ git log
+commit cb3292700efa875b6ff9efc152b5cbeeafe5aa81 (HEAD -> main)
+Author: kuti <kuti@example.com>
+Date:   Mon Feb 14 17:55:26 2022 +0000
+
+    kuti killer
+
+User@WIN-2VU0982IJMD MINGW32 ~/Desktop/kuti (main)
+$ git push rigin main
+fatal: 'rigin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+User@WIN-2VU0982IJMD MINGW32 ~/Desktop/kuti (main)
+$ git add .
+
+User@WIN-2VU0982IJMD MINGW32 ~/Desktop/kuti (main)
+$ git log
+commit cb3292700efa875b6ff9efc152b5cbeeafe5aa81 (HEAD -> main)
+Author: kuti <kuti@example.com>
+Date:   Mon Feb 14 17:55:26 2022 +0000
+
+    kuti killer
+
+User@WIN-2VU0982IJMD MINGW32 ~/Desktop/kuti (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   ll.txt
+
+
+User@WIN-2VU0982IJMD MINGW32 ~/Desktop/kuti (main)
+$ git commit -m "aza"
+[main cc103ac] aza
+ 1 file changed, 1 insertion(+)
+
+User@WIN-2VU0982IJMD MINGW32 ~/Desktop/kuti (main)
+$ git log
+commit cc103ac006ccb7a605a2ba330e1ad2001aedfdf4 (HEAD -> main)
+Author: kuti <kuti@example.com>
+Date:   Mon Feb 14 17:59:23 2022 +0000
+
+    aza
+
+commit cb3292700efa875b6ff9efc152b5cbeeafe5aa81
+Author: kuti <kuti@example.com>
+Date:   Mon Feb 14 17:55:26 2022 +0000
+
+    kuti killer
+
+User@WIN-2VU0982IJMD MINGW32 ~/Desktop/kuti (main)
+$
